@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>План похудения – Будьте здоровы</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container header-inner">
+    <div class="logo">Будьте <span>Здоровы</span></div>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="plan.html" class="active">План похудения</a>
+      <a href="recipes.html">Рецепты</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <h1 class="section-title">Пошаговый план похудения</h1>
+      <div class="grid-2">
+        <div>
+          <h2>1. Определите стартовую точку</h2>
+          <p>Сначала важно понять, в каком вы сейчас состоянии: вес, рост, уровень активности.</p>
+          <ul class="list">
+            <li>Взвесьтесь утром натощак</li>
+            <li>Измерьте рост и основные окружности (талия, бёдра)</li>
+            <li>Определите, сколько шагов в среднем делаете за день</li>
+          </ul>
+
+          <h2>2. Реальная цель</h2>
+          <p>
+            Безопасное снижение веса – около 0,5–1 кг в неделю. Не стремитесь похудеть 
+            "к завтрашнему дню" – важно качество, а не скорость.
+          </p>
+
+          <h2>3. Дефицит калорий</h2>
+          <p>
+            Чтобы худеть, нужно лёгкое, но стабильное снижение калорийности питания 
+            за счёт сладкого, фастфуда, жирного.
+          </p>
+        </div>
+
+      
+        <div class="card">
+          <h2>Калькулятор ИМТ</h2>
+          <p>ИМТ (индекс массы тела) помогает оценить, в норме ли ваш вес.</p>
+          <form id="bmi-form">
+            <label for="height">Рост (см):</label>
+            <input type="number" id="height" required min="100" max="250" placeholder="Например, 170">
+
+            <label for="weight">Вес (кг):</label>
+            <input type="number" id="weight" required min="30" max="300" placeholder="Например, 65">
+
+            <button type="submit" class="btn full-width">Рассчитать</button>
+          </form>
+          <div id="bmi-result" class="bmi-result"></div>
+
+          <div class="bmi-help">
+            <p><strong>Ориентировочная интерпретация:</strong></p>
+            <ul>
+              <li>Меньше 18.5 – недостаточная масса</li>
+              <li>18.5 – 24.9 – норма</li>
+              <li>25 – 29.9 – избыточная масса</li>
+              <li>30 и выше – ожирение</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-subtitle">4. Пример базового плана на неделю</h2>
+      <div class="plan-table">
+        <div class="plan-row plan-header">
+          <div>День</div>
+          <div>Питание</div>
+          <div>Активность</div>
+        </div>
+        <div class="plan-row">
+          <div>Понедельник</div>
+          <div>Убрать сладкое и фастфуд, добавить завтрак</div>
+          <div>30 минут быстрой ходьбы</div>
+        </div>
+        <div class="plan-row">
+          <div>Вторник</div>
+          <div>Половина тарелки – овощи</div>
+          <div>10 000 шагов</div>
+        </div>
+        <div class="plan-row">
+          <div>Среда</div>
+          <div>Белок в каждом приёме (курица, рыба, бобовые)</div>
+          <div>Лёгкая зарядка/растяжка 15 минут</div>
+        </div>
+        <div class="plan-row">
+          <div>Четверг</div>
+          <div>Минимум сладких напитков</div>
+          <div>30 минут ходьбы + лестницы вместо лифта</div>
+        </div>
+        <div class="plan-row">
+          <div>Пятница</div>
+          <div>Ужин не позже, чем за 3 часа до сна</div>
+          <div>Йога, растяжка или лёгкая тренировка дома</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© 2025 Будьте здоровы.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

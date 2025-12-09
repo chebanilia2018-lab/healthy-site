@@ -25,7 +25,51 @@
         Эти простые блюда помогут вам питаться вкусно и при этом двигаться к цели по снижению веса.
       </p>
 
-      <div class="cards recipes">
+      <!-- КАРТОЧКА С ФОРМОЙ ДОБАВЛЕНИЯ РЕЦЕПТА -->
+      <article class="card add-recipe-card">
+        <h2>Добавить свой рецепт</h2>
+        <p style="margin-bottom: 10px; font-size: 0.95rem;">
+          Заполните поля ниже и нажмите «Сохранить рецепт». Он появится в списке рецептов ниже
+          и будет сохраняться в этом браузере.
+        </p>
+
+        <form id="recipe-form">
+          <div class="form-field">
+            <label for="recipe-title">Название блюда</label>
+            <input type="text" id="recipe-title" placeholder="Например, Салат из огурцов" required>
+          </div>
+
+          <div class="form-field">
+            <label for="recipe-type">Тип приёма пищи</label>
+            <select id="recipe-type">
+              <option value="Завтрак">Завтрак</option>
+              <option value="Обед">Обед</option>
+              <option value="Ужин">Ужин</option>
+              <option value="Перекус">Перекус</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="recipe-ingredients">Ингредиенты</label>
+            <textarea id="recipe-ingredients" rows="3" placeholder="Перечислите продукты через запятую" required></textarea>
+          </div>
+
+          <div class="form-field">
+            <label for="recipe-steps">Приготовление</label>
+            <textarea id="recipe-steps" rows="4" placeholder="Кратко опишите, как приготовить" required></textarea>
+          </div>
+
+          <button type="submit" class="btn full-width">Сохранить рецепт</button>
+
+          <p id="recipe-message" class="recipe-message"></p>
+        </form>
+      </article>
+
+      <h2 class="section-subtitle">Рецепты</h2>
+
+      <!-- КОНТЕЙНЕР ДЛЯ ВСЕХ РЕЦЕПТОВ (СТАТИЧНЫЕ + ДОБАВЛЕННЫЕ) -->
+      <div class="cards recipes" id="recipes-list">
+        <!-- Статические рецепты (как были) -->
         <article class="card recipe">
           <h2>Овсянка с ягодами и орехами</h2>
           <p class="tag">Завтрак</p>
@@ -90,3 +134,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+

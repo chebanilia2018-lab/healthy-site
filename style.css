@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -338,4 +337,33 @@ a {
   .hero-text h1 {
     font-size: 2rem;
   }
+}
+
+
+
+.add-recipe-card {
+  margin-bottom: 24px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #cbd5f0;
+  font-size: 0.95rem;
+  resize: vertical;
+}
+
+.recipe-message {
+  margin-top: 8px;
+  font-size: 0.9rem;
 }
